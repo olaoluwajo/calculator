@@ -8,14 +8,19 @@
 .container {
   width: 100%;
   height: 100vh;
-  background: #0587ab;
+  background: #01093e;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+h1 {
+  font-family: sans-serif;
+  color: #201f1f;
+  padding: 0  0 20px 20px ;
+}
 
 .calculator {
-  background: #001a3e;
+  background: #d5d5d5;
   padding: 20px;
   border-radius: 20px;
 }
@@ -23,15 +28,19 @@
 .calculator form input {
   border: 0;
   outline: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  background: transparent;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #201f1f;
   box-shadow: 10px 5px 0.5em rgb(0, 0, 0), -5px 0 0.5em rgba(95, 90, 90, 0.486);
   font-size: 40px;
-  color: #fff;
+  color: #d5d5d5;
   cursor: pointer;
   margin: 20px;
+}
+
+.calculator form input:active {
+  background: black;
 }
 
 form .display {
@@ -43,16 +52,19 @@ form .display {
 form .display input {
   text-align: right;
   flex: 1;
+  color: #201f1f;
+  font-weight: bold;
   font-size: 50px;
   box-shadow: none;
+  border-radius: 20px;
   background: rgba(95, 90, 90, 0.168);
 }
 
 form input.equal {
-  width: 150px;
+  width: 170px;
+  border-radius: 40px;
 }
 
-
 form input.operator {
-  color: rgba(255, 255, 255, 0.396);
+  color: rgba(0, 0, 0, 0.638);
 }
